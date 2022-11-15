@@ -61,9 +61,7 @@ else if ($country!= NULL && $cities!= NULL){
   }
 }
 ?>
-<ul>
-<?php if ($country==NULL)
-    foreach ($results as $row): ?>
-  <li><?= $row['name'] . ' is ruled by ' . $row['head_of_state']; ?></li>
-<?php endforeach; ?>
-</ul>
+
+<?php if ($country==NULL) 
+  echo "<h3> No Country was Entered! </h3>"
+  ?>  
